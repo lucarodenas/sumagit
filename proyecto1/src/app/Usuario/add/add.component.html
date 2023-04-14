@@ -1,0 +1,10 @@
+<div>
+    <h3>Añadir usuario</h3>
+    <p>Correo</p>
+    <input  type="text" [(ngModel)]="u.email">
+    <p>Nombre</p>
+    <input type="text" [(ngModel)]="u.nombre">
+    <p>Prioridad</p>
+    <input type="text" [(ngModel)]="u.prioridad">
+    <button (click) = "add()">Añadir</button>
+</div>

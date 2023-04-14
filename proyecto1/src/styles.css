@@ -1,0 +1,13 @@
+body{
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+#botones button{
+    margin-right: 2rem;
+}

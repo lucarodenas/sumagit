@@ -1,0 +1,25 @@
+<div>
+    <div>
+        <h3>Usuarios</h3>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Nombre</th>
+                    <th>Prioridad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let usuario of usuarios">
+                    <th>{{usuario.id}}</th>
+                    <th>{{usuario.email}}</th>
+                    <th>{{usuario.nombre}}</th>
+                    <th>{{usuario.prioridad}}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
