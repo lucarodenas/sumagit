@@ -27,4 +27,8 @@ export class AppComponent {
   Sumar(){
     this.router.navigate(["suma"]);
   }
+
+  ListarSumas(){
+    this.router.navigate(["listarSuma"]);
+  }
 }

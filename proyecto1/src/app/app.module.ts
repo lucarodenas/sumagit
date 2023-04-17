@@ -8,7 +8,8 @@ import { DeleteComponent } from './Usuario/delete/delete.component';
 import { FormsModule } from '@angular/forms';
 import { ServiceService } from '../app/Service/service.service';
 import { HttpClientModule } from '@angular/common/http';
-import { SumaComponent } from './suma/suma.component';
+import { SumaComponent } from './Suma/sumar/suma.component';
+import { ListarSumasComponent } from './Suma/listar-sumas/listar-sumas.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SumaComponent } from './suma/suma.component';
     ListarComponent,
     AddComponent,
     DeleteComponent,
-    SumaComponent
+    SumaComponent,
+    ListarSumasComponent
   ],
   imports: [
     BrowserModule,
