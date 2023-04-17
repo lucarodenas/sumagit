@@ -16,12 +16,16 @@ export class SumaComponent {
   num1: number = 0;
   num2: number = 0;
   suma: number = 0;
+  id: number = 0;
+  nombre: string = "";
 
   sumar() {
     this.suma = this.num1 + this.num2;
     this.s.primernumero = this.num1;
     this.s.segundonumero = this.num2;
     this.s.suma = this.suma;
+    this.s.idusuario = this.id;
+    this.s.usu_creacion = this.nombre;
     this.service.addSuma(this.s).subscribe(
       response => this.router.navigate(['/listarSuma'])
     );

@@ -28,8 +28,6 @@ export class ServiceService {
   }
 
   addSuma(s: suma) {
-    s.idusuario = 3;
-    s.usu_creacion = "Luca";
     return this.http.post<suma>(this.UrlSuma + '/add' , s, { headers: this.httpHeaders });
   }
 
