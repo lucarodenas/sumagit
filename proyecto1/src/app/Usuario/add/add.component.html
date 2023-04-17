@@ -1,10 +1,13 @@
 <div>
     <h3>Añadir usuario</h3>
-    <p>Correo</p>
+    <div>Correo</div>
     <input  type="text" [(ngModel)]="u.email">
-    <p>Nombre</p>
+    <br><br>
+    <div>Nombre</div>
     <input type="text" [(ngModel)]="u.nombre">
-    <p>Prioridad</p>
+    <br><br>
+    <div>Prioridad</div>
     <input type="text" [(ngModel)]="u.prioridad">
+    <br><br>
     <button (click) = "add()">Añadir</button>
 </div>
