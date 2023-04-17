@@ -8,6 +8,5 @@ public interface UsuarioRepositorio extends Repository<Usuario, Integer>{
 	List<Usuario>findAll();
 	Usuario findById(int id);
 	Usuario save(Usuario u);
-	Suma save(Suma s);
 	void deleteById(int id);
 }

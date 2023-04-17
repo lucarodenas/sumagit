@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { suma } from 'src/app/Modelo/suma';
 import { ServiceService } from 'src/app/Service/service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-suma',
@@ -11,7 +12,7 @@ export class SumaComponent {
 
   s: suma = new suma();
   
-  constructor(private service: ServiceService) { }
+  constructor(private service: ServiceService, private router: Router) { }
   num1: number = 0;
   num2: number = 0;
   suma: number = 0;
@@ -21,6 +22,8 @@ export class SumaComponent {
     this.s.primernumero = this.num1;
     this.s.segundonumero = this.num2;
     this.s.suma = this.suma;
-    this.service.addSuma(this.s).subscribe();
+    this.service.addSuma(this.s).subscribe(
+      response => this.router.navigate(['/listarSuma'])
+    );
   }
 }
