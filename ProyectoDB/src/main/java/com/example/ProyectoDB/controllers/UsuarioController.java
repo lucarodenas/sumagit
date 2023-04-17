@@ -47,4 +47,5 @@ public class UsuarioController {
 	public Suma add(@RequestBody Suma suma) {
 		return service.save(suma);
 	}
+	//suma añadida exitosamente por Br1 
 }
