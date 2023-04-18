@@ -8,6 +8,10 @@ body{
     font-family: sans-serif;
 }
 
+button{
+    outline: none;
+}
+
 #botones button{
     margin-right: 2rem;
 }

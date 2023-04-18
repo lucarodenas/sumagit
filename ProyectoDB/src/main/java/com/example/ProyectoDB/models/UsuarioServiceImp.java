@@ -29,12 +29,6 @@ public class UsuarioServiceImp implements UsuarioService{
 		return repositorio.save(usuario);
 	}
 
-
-	@Override
-	public Suma save(Suma suma) {
-		return repositorio.save(suma);
-	}
-
 	@Override
 	public void delete(int id) {
 		repositorio.deleteById(id);
